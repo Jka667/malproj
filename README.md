@@ -7,7 +7,7 @@
 ### Overview
 This project implements a simple AI/ML pipeline to classify Windows PE files (`.exe`, `.dll`) as **malware** or **benign** via static feature extraction and a RandomForest model. A Flask-based web interface provides an upload form and displays the result in a neon-green “hacker” theme.
 
-**Author:** J0n4th4n.K  
+**Author:** J0n4th4n.Kassegne  
 **GitHub:** [Jka667](https://github.com/Jka667)
 
 ### Prerequisites
@@ -17,7 +17,7 @@ This project implements a simple AI/ML pipeline to classify Windows PE files (`.
 - **Disk:** ≥ 40 GB  
 
 ### Project Structure
-```text
+
 malproj/
 ├── venv/                     # Python virtual environment
 ├── dataset/
@@ -32,11 +32,9 @@ malproj/
 ├── templates/
 │   └── index.html            # HTML template for upload form & result
 └── static/
-    └── style.css             # CSS for neon-green “hacker” theme
+    └── style.css             # CSS 
 Installation
-bash
-Copy
-Edit
+
 # 1. Clone the repository
 git clone https://github.com/Jka667/malproj.git
 cd malproj
@@ -51,9 +49,7 @@ pip install pefile pandas scikit-learn joblib matplotlib jupyterlab flask
 Command-line Usage
 Extract features into CSV
 
-bash
-Copy
-Edit
+
 python extract_features.py
 # Output: malware_dataset.csv
 Train the model and save it
@@ -66,9 +62,7 @@ python train_model.py
 # Saves model to malware_detector.pkl
 Predict a single file
 
-bash
-Copy
-Edit
+
 # Malware example
 python predict.py dataset/malware/Win32.Wannacry.exe
 # → Malware
@@ -83,9 +77,7 @@ python predict.py dataset/benign/test.txt
 Web Interface
 Run the Flask app
 
-bash
-Copy
-Edit
+
 python app.py
 Open your browser at http://127.0.0.1:5000/
 
@@ -115,9 +107,7 @@ RAM : ≥ 4 Go
 Disque : ≥ 40 Go
 
 Structure du projet
-text
-Copy
-Edit
+
 malproj/
 ├── venv/                     # Environnement virtuel Python
 ├── dataset/
@@ -134,9 +124,7 @@ malproj/
 └── static/
     └── style.css             # Feuille de style néon-vert “hacker”
 Installation
-bash
-Copy
-Edit
+
 # 1. Cloner le dépôt
 git clone https://github.com/Jka667/malproj.git
 cd malproj
@@ -151,9 +139,7 @@ pip install pefile pandas scikit-learn joblib matplotlib jupyterlab flask
 Utilisation en ligne de commande
 Extraction vers CSV
 
-bash
-Copy
-Edit
+
 python extract_features.py
 # Génère : malware_dataset.csv
 Entraînement et sauvegarde du modèle
@@ -166,9 +152,7 @@ python train_model.py
 # Sauvegarde : malware_detector.pkl
 Prédiction d’un fichier
 
-bash
-Copy
-Edit
+
 # Exemple malware
 python predict.py dataset/malware/Win32.Wannacry.exe
 # → Malveillant
@@ -183,9 +167,7 @@ python predict.py dataset/benign/test.txt
 Interface Web
 Lancer l’application Flask
 
-bash
-Copy
-Edit
+
 python app.py
 Ouvrir votre navigateur à http://127.0.0.1:5000/
 
