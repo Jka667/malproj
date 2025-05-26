@@ -1,4 +1,5 @@
-# PE Malware Detector (CentOS 9) / Détecteur de Malware PE (CentOS 9)
+# AI/ML Sentinel: PE Malware Watchdog / Sentinelle IA/ML : Gardien des Malwares PE
+
 
 ---
 
