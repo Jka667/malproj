@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>M4lw4r3 D3t3ct10n</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">M4lw4r3 D3t3ct10n</h1>
+    <form method="post" enctype="multipart/form-data" class="upload-form">
+      <input type="file" name="file" accept=".exe,.dll" required>
+      <button type="submit">4n4lys3r</button>
+    </form>
+    {% if prediction %}
+      <div class="result">{{ prediction }}</div>
+    {% endif %}
+    <footer>
+      <p>By <span class="author">J0n4th4n.K</span> —  
+         GitHub: <a href="https://github.com/Jka667" target="_blank">Jka667</a>
+      </p>
+    </footer>
+  </div>
+</body>
+</html>
