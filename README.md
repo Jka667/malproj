@@ -55,9 +55,7 @@ python extract_features.py
 # Output: malware_dataset.csv
 Train the model and save it
 
-bash
-Copy
-Edit
+
 python train_model.py
 # Prints classification report
 # Saves model to malware_detector.pkl
@@ -145,9 +143,7 @@ python extract_features.py
 # Génère : malware_dataset.csv
 Entraînement et sauvegarde du modèle
 
-bash
-Copy
-Edit
+
 python train_model.py
 # Affiche le rapport de classification
 # Sauvegarde : malware_detector.pkl
